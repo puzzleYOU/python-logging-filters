@@ -4,14 +4,18 @@ from setuptools import find_packages, setup
 
 setup(
     name="python-logging-filters",
-    version="0.1.1",
+    version="0.1.2",
     description="standard python logging filters",
     long_description=dedent(
         """
         Simple filters for standard python logging, e.g. for suppressing
         noisy 3rd party framework logging.
 
-        # DjangoHttp404LogFilter
+        Current implementations
+        =======================
+
+        DjangoHttp404LogFilter
+        ----------------------
 
         Suppresses Django's default 'Not Found: ...' logging.
         See the `python_logging_filters.DjangoHttp404LogFilter`
