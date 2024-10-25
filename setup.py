@@ -4,7 +4,7 @@ from setuptools import find_packages, setup
 
 setup(
     name="python-logging-filters",
-    version="0.1.0",
+    version="0.1.1",
     description="standard python logging filters",
     long_description=dedent(
         """
