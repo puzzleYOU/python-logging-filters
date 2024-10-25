@@ -3,7 +3,8 @@ from setuptools import find_packages, setup
 setup(
     name="python-logging-filters",
     version="0.1.0",
-    description=(
+    description="standard python logging filters",
+    long_description=(
         "Simple filters for standard python logging, e.g. for suppressing "
         "noisy 3rd party framework logging."
     ),
