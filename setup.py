@@ -7,7 +7,6 @@ setup(
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     author="puzzleYOU GmbH",
-    author_email="scrum@puzzleyou.de",
     url="https://github.com/puzzleYOU/python-logging-filters/",
     license="MIT",
     platforms=["any"],
