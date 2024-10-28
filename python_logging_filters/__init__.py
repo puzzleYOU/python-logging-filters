@@ -33,8 +33,9 @@ class DjangoHttp404LogFilter(logging.Filter):
     PATTERN = re.compile("^Not Found:")
 
     def filter(self, record: logging.LogRecord) -> bool:
+        message = record.msg % record.args
         is_not_found_record = (
-            self.PATTERN.match(record.msg) is not None
+            self.PATTERN.match(message) is not None
             and record.levelno == logging.WARNING
             and record.name.startswith("django")
         )
