@@ -9,7 +9,7 @@ setup(
     author="puzzleYOU GmbH",
     author_email="scrum@puzzleyou.de",
     url="https://github.com/puzzleYOU/python-logging-filters/",
-    license="GPLv3",
+    license="MIT",
     platforms=["any"],
     packages=find_packages(),
     install_requires=[],
