@@ -1,28 +1,11 @@
-from textwrap import dedent
-
 from setuptools import find_packages, setup
 
 setup(
     name="python-logging-filters",
     version="0.1.2",
     description="standard python logging filters",
-    long_description=dedent(
-        """
-        Simple filters for standard python logging, e.g. for suppressing
-        noisy 3rd party framework logging.
-
-        Current implementations
-        =======================
-
-        DjangoHttp404LogFilter
-        ----------------------
-
-        Suppresses Django's default 'Not Found: ...' logging.
-        See the `python_logging_filters.DjangoHttp404LogFilter`
-        and the official Django documentation for more details how
-        to use and configure that filter.
-        """
-    ),
+    long_description=open("README.md").read(),
+    long_description_content_type="text/markdown",
     author="puzzleYOU GmbH",
     author_email="scrum@puzzleyou.de",
     url="https://github.com/puzzleYOU/python-logging-filters/",
